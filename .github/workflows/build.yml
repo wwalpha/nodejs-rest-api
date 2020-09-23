@@ -51,4 +51,4 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: lawson/backend
+          ECR_REPOSITORY: lawson
