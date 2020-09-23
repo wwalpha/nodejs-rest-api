@@ -8,7 +8,8 @@
   "scripts": {
     "start": "forever start -v -c ts-node app.ts",
     "logs": "forever logs app.ts",
-    "kill": "lsof -i :${PORT:-8080} -t | xargs kill"
+    "kill": "lsof -i :${PORT:-8080} -t | xargs kill",
+    "build": "docker build -t lawson/backend ."
   },
   "devDependencies": {
     "@types/cors": "^2.8.7",
