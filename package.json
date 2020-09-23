@@ -5,6 +5,9 @@
   "repository": "https://github.com/wwalpha/nodejs-rest-api",
   "author": "wwalpha <wwalpha@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "forever start -v -c ts-node app.ts"
+  },
   "devDependencies": {
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
